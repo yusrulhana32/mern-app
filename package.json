@@ -1,0 +1,28 @@
+{
+  "name": "inframe_studio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon server.js",
+    "client": "npm run dev --prefix frontend",
+    "start": "node server.js",
+    "client-build": "npm run build --prefix frontend",
+    "dev": "concurrently \" npm run server \" \" npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.0",
+    "next": "^15.0.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
